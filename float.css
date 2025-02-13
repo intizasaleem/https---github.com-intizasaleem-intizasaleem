@@ -10,7 +10,6 @@
     text-align: center;
     margin: 10px;
     padding: 10px;
-
 }
 .box{
     border: 2px solid blue;
@@ -23,8 +22,7 @@
 }
 .left {
     float: top;
-
-    
+   
 }
 .right{
     float: right;
