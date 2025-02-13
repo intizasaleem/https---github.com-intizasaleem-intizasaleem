@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box-set{
+    width:90%;
+    height: 300%;
+    border: 3px solid red;
+    background-color: aquamarine;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+
+}
+.box{
+    border: 2px solid blue;
+    background-color: bisque;
+    width: 15%;
+    height: 10%;
+    margin: 20px;
+    padding: 20px;
+    
+}
+.left {
+    float: top;
+
+    
+}
+.right{
+    float: right;
+}
