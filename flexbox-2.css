@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: whitesmoke;
+}
+.container{
+    display: flex;
+}
+.card1{
+    margin: 10px;
+    border:2px solid white;
+    width: 400px;
+    height: 650px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: justify;
+
+
+    
+    
+}
+h1{
+    margin: 10px;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    
+    
+}
+p{
+    margin: 10px;
+    font-size: 20px;
+    color: black;
+}
+
+button{
+    border: 1px solid lightslategray;
+    width: 250px;
+    height:50px ;
+    padding: 5px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    margin: 20px;
+    cursor: pointer;
+
+} 
+button:hover{
+    background-color: #555;
+}
