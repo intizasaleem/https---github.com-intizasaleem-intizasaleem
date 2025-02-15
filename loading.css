@@ -1,0 +1,37 @@
+
+body{
+    background-color: black;
+}
+.loading{
+    width: 50px;
+    height: 50px;
+    border: 6px solid aqua;
+    border-radius: 4px;
+    margin: 10px;
+    box-shadow: 0 0 8px aqua, 0 0 8px aqua  inset;
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    translate: -70% 70%;
+    z-index: 10;
+    animation: 2s loading ease-in-out infinite;
+    animation-play-state: running;
+}
+.loading:hover{
+    animation-play-state: paused;
+}
+@keyframes loading {
+    0%{
+        transform: rotatex(0) rotateY(0) rotateZ(0);
+    }
+    33%{
+        transform:rotatex(180deg) rotateY(0) rotateZ(0);
+    }
+    67%{
+    transform:  rotatex(180deg) rotateY(180deg) rotateZ(0);
+    }
+    100%{
+        transform:  rotatex(180deg) rotateY(180deg) rotateZ(180deg);;
+    }
+    
+}
