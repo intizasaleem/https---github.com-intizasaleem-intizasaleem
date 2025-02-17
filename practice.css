@@ -1,0 +1,49 @@
+.container {
+    background-color: green;
+
+}
+
+.box {
+    background-color: greenyellow;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    position: relative;
+    animation-name: intiza1;
+    animation-duration: 0.7s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-delay: 3s;
+    animation-direction: alternate;
+    animation-name: intiza2;
+
+
+}
+
+@keyframes intiza2 {
+    0% {
+        top: 0px;
+        left: 0px;
+    }
+
+    25% {
+        top: 250px;
+        left: 0px;
+    }
+
+    100% {
+        top: 250px;
+        left: 250px;
+    }
+}
+
+@keyframes intiza1 {
+    from {
+        width: 200px;
+
+    }
+
+    to {
+        width: 200px;
+    }
+}
