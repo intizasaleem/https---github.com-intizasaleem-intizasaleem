@@ -279,116 +279,162 @@ h2 {
 .social-icons i {
     font-size:1.5rem;
 }
-@media (max-width: 991px) {
-    .navbar-nav {
-        text-align: center;
-        padding: 10px;
-    }
-    .navbar-nav .nav-item {
-        margin: 10px 0;
-    }
-    .navbar-toggler {
-        border: none;
-        outline:none;
+.navbar-nav {
+    text-align: center;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar-collapse {
+    justify-content:flex-end;
 }
 @media (max-width: 768px) {
-    .hero {
-        text-align: center;
-        padding: 50px 20px;
-    }
     .hero h1 {
-        font-size: 36px;
-    }
-    .hero p {
-        font-size: 18px;
-    }
-    .hero .btn {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-    .hero-img {
-        width: 80%;
-        display: block;
-        margin:auto;
-}
-}}
-@media (max-width: 768px) {
-    .swiper-container {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-        padding: 10px;
-    }
-    .property-card {
-        display: inline-block;
-        width: 250px;
-        margin:10px;
-}
-}
-@media (max-width: 768px) {
-    .about-section {
-        flex-direction: column;
+        font-size: 32px;
         text-align: center;
-        padding: 30px;
     }
-    .content {
-        max-width: 100%;
+    
+    .hero p {
+        font-size: 16px;
+        text-align: center;
     }
-    .image-container {
-        max-width: 100%;
+
+    .hero .btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
     }
-    .image-container img {
-        width: 80%;
+
+    .trust {
+        justify-content: center;
+    }
+
+    .hero-img {
+        width: 100%;
         margin-top:20px;
 }
 }
 @media (max-width: 768px) {
-    .container-class {
-        padding: 10px;
-    }
-    .feature-box {
-        text-align: center;
-        margin-bottom:20px;
-}
-}
-@media (max-width: 768px) {
-    .looking {
-        flex-direction: column;
-        text-align: center;
-        padding: 30px;
-    }
-    .text-content {
-        max-width: 100%;
-    }
-    .image-container {
-        max-width:100%;
-}
-}
-@media (max-width: 992px) {
     .projects-container {
         grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
     }
-}
+    
+    .property-card {
+        max-width: 100%;
+    }
 
-@media (max-width: 576px) {
-    .projects-container {
-        grid-template-columns: repeat(1,1fr);
-}
-}
+    .image-container {
+        max-width: 100%;
+        text-align: center;
+    }
 
+    .image-container img {
+        width:80%;
+}
+}
 @media (max-width: 768px) {
     .footer .row {
         text-align: center;
     }
+
     .footer .col-md-4 {
         margin-bottom:20px;
 }
 }
+/* Mobile responsiveness */
+@media (max-width: 400px) {
+    .about-section {
+        font-size: 14px;
+        padding: 10px;
+        
+    }
+}
 
+/* Laptop-specific adjustments */
+@media (min-width: 768px) {
+    .about-text {
+        font-size: 18px;
+    }
 
+    .about-image img {
+        width:90%;
+}
+}
+/* Adjust for tablets */
+@media (max-width: 992px) {
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
 
+/* Adjust for mobile */
+@media (max-width: 768px) {
+    .projects-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
 
+/* Style project cards */
+.project-card {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
 
+/* Adjust text size for small screens */
+@media (max-width: 768px) {
+    .project-card h3 {
+        font-size: 20px;
+    }
 
+    .project-card p {
+        font-size:14px;
+}
+}
 
+/* Mobile responsiveness */
+@media (max-width:480px) {
+    .looking-button {
+        padding: 8px 15px;
+    }
+
+    .looking-text {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .looking-image {
+        width: 100%;
+    }
+
+    .looking-image img {
+        width: 90%;
+    }
+}
+
+/* Laptop-specific adjustments */
+@media (min-width: 1024px) {
+    .looking-text {
+        font-size: 18px;
+    }
+
+    .looking-image img {
+        width:90%;
+}
+}
